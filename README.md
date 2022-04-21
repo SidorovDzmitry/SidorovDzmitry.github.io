@@ -1,2 +1,2 @@
-# SidorovDzmitry.github.io
+# Сидоров Дмитрй
 Мой первый сайт
