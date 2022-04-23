@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="Это моя первая страница">
+   <meta name="author" content="Имя автора">
+   <meta name="robots" content="all">
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="header">
+      <nav class="menu">
+         <a class="logo">Андрей Браун</a>
+         <ul class='menu-list'>
+            <li class="menu-item"><a class="menu-link" href="#resume">Обо мне</a></li>
+            <li class="menu-item"><a class="menu-link" href="#skills">Услуги</a></li>
+            <li class="menu-item"><a class="menu-link" href="#cases">Кейсы</a></li>
+            <li class="menu-item"><a class="menu-link" href="#calc">Прайс</a></li>
+            <li class="menu-item"><a class="menu-link" href="#reviews">Отзывы</a></li>
+            <li class="menu-item"><a class="menu-link" href="#contacts">Контакты</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <main class="main">
+      <section id="presentation"> <!--или лучше <article?-->
+         <h1 class="title_presentation">Привет<br>Я Андрей Браун</h1>
+         <h2 class="title_occupation">Фулл стек веб-разработчик</h2>
+         <input type="submit" value="Обо мне"> <!--Почему <a> как ссылка или якорь? (или button)-->
+         <input type="submit" value="Мои работы"> <!--Почему <a> как ссылка или якорь? (или button)-->
+      </section>
+
+      <section id="resume">
+         <h2 class="title_resume">Обо мне</h2>
+         <!--Декаративную черту лучше через <hr> или используя в css ::after-->
+         <img src="img/avatar.jpg" alt="ОЙ! здесь должно быть мое фото">
+         <p class="text_resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio provident harum quas, eius sit quia odit expedita aut repellat modi! Accusamus sint, porro voluptatum atque ducimus optio reiciendis veritatis laboriosam.</p>
+         <p class="text_resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas praesentium, perferendis fuga nulla consequuntur quisquam culpa ex et maiores eum at maxime rerum mollitia, placeat autem ipsa. Consequatur, sit, voluptates.</p>
+         <a class="download_resume" href="download/summary.rar" download>
+         <img src="img/dowload.png" alt="rar">Скачать резюме</a>
+      </section>
+
+      <section id="skills">
+         <h2 class="title_skills">Что я умею</h2> <!--лучше использовать отдельные <div> или как список. таблицу?-->
+         <ul class="skills-list">
+            <li class="skills-item">
+               <img src="img/nout.png" alt="Ой! здесь должна быть картинка">
+               <h3 class="skills-item_title">Веб-дизайн</h3>
+               <p class="text_skills_item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique.</p>
+            </li>
+
+            <li class="skills-item">
+               <img src="img/znak.png" alt="Ой! здесь должна быть картинка">
+               <h3 class="title_skills_item">Разработка</h3>
+               <p class="text_skills-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. excepturi.</p>
+            </li>
+
+            <li class="skills-item">
+               <img src="img/raketa.png" alt="Ой! здесь должна быть картинка">
+               <h3 class="title-skills_item">Сео-оптимизация</h3>
+               <p class="text-skills-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, excepturi.</p>
+            </li>
+
+            <li class="skills-item">
+               <img src="img/gramof.png" alt="Ой! здесь должна быть картинка">
+               <h3 class="title_skills-item">Маркетинг</h3>
+               <p class="text_skills-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similiq, excepturi.</p>
+            </li>
+         </ul>
+      </section>
+
+      <section id="cases">
+         <h2 class="title_cases">Кейсы</h2>
+         <p class="text_casee">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quam sint adipisci eligendi ea similique.</p>
+         <img src="img/opencloud.png" alt="Пример кейса"> <!--В реал. проекте лучше фрэймы или маленькие img+ссылки?-->
+         <div class="case_info">
+            <h3 class="title_case_info">CLIENT:</h3>
+            <span class="text_case_info">Какая-то компания</span>
+            <h3 class="title_case_info">WEB-SiTE:</h3>
+            <span class="text_case_info">http://somedomain.com</span>
+            <a class="link_case_info" href="https://www.google.com">VISIT LIVE SITE</a> <!--<button> или css?-->
+         </div>
+
+         <div class="project_name">
+            <h3 class="title_project_name">Назваие проекта</h3>
+            <p class="text_project_name">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quibusdam, odio dolore ab dolorum perspiciatis placeat repellendus, vero ad culpa, incidunt quam. Voluptas, soluta illo optio distinctio eaque expedita possimus.</p>
+         </div>
+      </section>
+
+      <section id="calc">
+         <form action="#">
+            <h2 class="title_calc">Расчет стоимости</h2>
+            <h3 class="title_calc-item">">Тип сайта</h3>
+            <input list="type_site" placeholder="Выберите пункт">
+            <datalist id="type_site">
+               <option value="landing page"></option>
+               <option value="Сайт визитка"></option>
+               <option value="Корпаративный сайт"></option>
+               <option value="Интернет магазин"></option>
+            </datalist>
+
+            <h3 class="title_calc-item">Дизайн</h3>
+            <input list="type_dasign" placeholder="Выберите пункт">
+            <datalist id="type_dasign">
+               <option value="Классический стиль"></option>
+               <option value="Корпаративный стиль"></option>
+               <option value="Ретро"></option>
+               <option value="Рисованный стиль"></option>
+            </datalist>
+
+            <h3 class="title_calc-item">Адаптивность</h3> <!--Или лучше через <select> c предустановленным вариантом?-->
+            <input list="adaptability" placeholder="Выберите пункт">
+            <datalist id="adaptability">
+               <option value="Да"></option>
+               <option value="нет"></option>
+            </datalist>
+         </form>
+
+         <!--Пока не понимаю как сделать расчет стоимости и сроков в зависимости от выбранных значений и вывести рез-ты-->
+         <form action="#">
+            <h4 class="title_result_item">Сроки</h4>
+            <mark> <output name="z" for="e f"> </output> </mark>
+         </form>
+
+         <form action="#">
+            <h4 class="title_result_item">Стоимость</h4>
+            <mark> <output name="z" for="e f"> </output> </mark>
+         </form>
+      </section>
+
+      <section id="statistics">
+         <h2 class="tltle_statistics">Немного статистики</h2>
+         <!--Что лучше <div>, <ul> или <table>?-->
+         <div class="clients">
+            <img src="img/smile.png" alt="Ой! здесь должна быть картинка">
+            <p class="text_statistics_bold">120</p>
+            <p class="text_statistics">Счастливых клиенто</p>
+         </div>
+
+         <div class="time">
+            <img src="img/tag.png" alt="Ой! здесь должна быть картинка">
+            <p class="text_statistics_bold">4600</p>
+            <p class="text_statistics">Часов работы</p>
+         </div>
+
+         <div class="projects">
+            <img src="img/choice.png" alt="Ой! здесь должна быть картинка">
+            <p class="text_statistics_bold">340</p>
+            <p class="text_statistics">Проектов завршено</p>
+         </div>
+
+         <div class="reward">
+            <img src="img/cup.png" alt="Ой! здесь должна быть картинка">
+            <p class="text_statistics_bold">23</p>
+            <p class="text_statistics">Наград получено</p>
+         </div>
+      </section>
+
+      <section id="reviews">
+         <h2 class="title_reviews">Отзывы</h2>
+         <img src="img/foto.jpg" alt="ОЙ! здесь должно быть фото">
+         <p class="title_reviews">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio provident harum quas, eius sit quia odit expedita aut repellat modi! Accusamus sint, porro voluptatum atque ducimus optio reiciendis veritatis laboriosam.</p>
+         <p><span class="text_reviews-bold">Михаил</span>, Генеральный директр ПАО "Газпром"</p>
+         <!--или лучше вместо span использвать strong (b)-->
+      </section>
+   </main>
+
+   <footer>
+      <section id="contacts">
+         <h2 class="title_contacts">Мои контакты</h2>
+         <p class="text_contacts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita velit veritatis, quidem, repellat.</p>
+         <ul class="list-contacts">
+            <li class="contacts-item"> <a class="contacts-link" href="#">Cанкт-Петербург<br>Невский проспект 11</a></li>
+            <li class="contacts-item"> <a class="contacts-link" href="mailto:info@companyname.com">info@companyname.com</a></li>
+            <li class="contacts-item"> <a class="contacts-link" href="tel:+7999999999">+7999-999-999</a></li>
+         </ul>
+      </section>
+
+      <section class="feedback">
+         <h3 class="title_feedback">Оставьте мне сообщение</h3>
+         <form action="#">
+            <input type="text" placeholder="Введите ваше имя">
+            <input type="email" placeholder="E-mail"><br>
+            <textarea name="feedback" cols="45" rows="10" placeholder="Сообщение"></textarea><br>
+            <button>Отправить</button>
+         </form>
+         <ul class="social">
+            <li class="social_item"> <a class="social-link-fb" href="#" target="_blank" aria-label="Link to facebook"></a>></li>
+            <li class="social_item"> <a class="social-link-tw" href="#" target="_blank" aria-label="Link to twitter"></a>></li>
+            <li class="social_item"> <a class="social-link-dr" href="#" target="_blank" aria-label="Link to dribble"></a>></li>
+            <li class="social_item"> <a class="social-link-inst" href="#" target="_blank" aria-label="Link to instaram"></a>></li>
+            <li class="social_item"> <a class="social-link-ln" href="#" target="_blank" aria-label="Link to linkedin"></a>></li>
+         </ul>
+      </section>
+      <div class="location">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93409.48475234307!2d-71.75561761223696!3d42.977296244777975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e233e8b7590fb7%3A0x386a28dfe2710e41!2z0J3RjNGOINCR0L7RgdGC0L7QvSwg0J3RjNGOLdCl0Y3QvNC_0YjQuNGAIDAzMDcwLCDQodCo0JA!5e0!3m2!1sru!2sby!4v1650668692079!5m2!1sru!2sby" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="footer_bottom">
+         <span>Сopyright &copy;&nbsp;2021 Андрей Браун. Dasign by Web</span>
+      </div>
+   </footer>
+</body>
+</html>
